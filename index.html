@@ -1,32 +1,54 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andresen New Year</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main-page.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
+
 <body>
-<div class="wrapper">
-    <div class="design design-left">
-        <img src="icons/design-right.svg" alt="Design">
-        <img src="icons/design-right.svg" alt="Design">
-    </div>
-    <div class="content">
-        <header class="header">
-            <div class="header__menu">
-                Комнаты
-                <button>
-                    <img src="icons/rooms.svg" alt="Rooms">
-                </button>
+    <div class="mobile">
+        <div class="header__menu header__menu-active">
+            <div class="burger">
+                <a href="#" class="burger-link">
+                    <img src="./icons/burger.svg" alt="burger">
+                </a>
             </div>
-        </header>
-        <main class="body">
+            <div class="header__menu-modal">
+                <ul class="header__modal-list">
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">Mood: Праздник к нам приходит</a>
+                    </li>
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">#andersengift</a>
+                    </li>
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">Ями пейдж: вкуси праздник</a>
+                    </li>
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">Гордости пейдж</a>
+                    </li>
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">Посткроссинг: спешл фор ю</a>
+                    </li>
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">Объединяйся</a>
+                    </li>
+                    <li class="header__modal-item">
+                        <a href="#" class="header__modal-link">Празднуем здесь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
             <section class="body__new-year">
-                <img src="icons/main-page/new-season.svg" alt="New Season">
+                <img src="icons/new-season.svg" alt="New Season">
             </section>
             <section class="body__timer-box timer">
                 <h1 class="timer__celebration">
@@ -37,181 +59,308 @@
                         <div class="timer__inner">
                             дни
                             <span>
-                            14
-                        </span>
+                                14
+                            </span>
                         </div>
                     </div>
                     <div class="timer__box">
                         <div class="timer__inner">
                             часы
                             <span>
-                            05
-                        </span>
+                                05
+                            </span>
                         </div>
                     </div>
                     <div class="timer__box">
                         <div class="timer__inner">
                             минуты
                             <span>
-                            35
-                        </span>
+                                35
+                            </span>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="body__presents presents">
-                <div class="presents__carpet">
-                    <img src="images/main-page/carpet.png" alt="Carpet">
+            <div class="mobile-block">
+                <img class="img" src="icons/painting-color.png" alt="Santa">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">Празднуем здесь </h3>
+                    <p>Будь на связи! Подключайся к трансляции.</p>
                 </div>
-                <div class="presents__coffee-table presents__box">
-                    <img src="images/main-page/chair%20coffee%20table%20color.png" alt="Coffee table">
-
+            </div>
+            <div class="mobile-block">
+                <img class="img" src="icons/Christmas-tree-color.png" alt="Christmas tree">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">Объединяйся </h3>
+                    <p>Принимаем участие в стихотворном челлендже «Новогодняя гирлянда».</p>
                 </div>
-                <div class="presents__message presents__coffee">
-                    <h2>
-                        Гордости пейдж
-                    </h2>
-                    <p>
-                        Подводим итоги уходящего года
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
+            </div>
+            <div class="mobile-block">
+                <img class="img" src="icons/fireplace.png" alt="Fireplace">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">#andersengift </h3>
+                    <p>Новогодний челлендж-адвент с розыгрышем крутого подарка.</p>
                 </div>
-                <div class="presents__chair presents__box">
-                    <img src="images/main-page/chair%20color.png" alt="Chair">
+            </div>
+            <div class="mobile-block">
+                <img class="img" src="icons/TV-color.png" alt="TV">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">Mood: Праздник к нам приходит </h3>
+                    <p>Делимся новогодним настроением
+                        с коллегами.</p>
                 </div>
-                <div class="presents__xmas presents__box">
-                    <img class="img" src="images/main-page/Christmas-tree-color.png" alt="Christmas tree">
-
+            </div>
+            <div class="mobile-block">
+                <img class="img" src="icons/festive-table.png" alt="Festive Table">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">Ями пейдж: вкуси праздник </h3>
+                    <p>Делимся рецептами к праздничному столу в лучших традициях.</p>
                 </div>
-                <div class="presents__message presents__xmas-msg">
-                    <h2>
-                        Объединяйся
-                    </h2>
-                    <p>
-                        Принимаем участие в стихотворном челлендже «Новогодняя гирлянда».
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
+            </div>
+            <div class="mobile-block">
+                <img src="icons/chair%20coffee%20table%20color.png" alt="Coffee table">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">Гордости пейдж</h3>
+                    <p>Подводим итоги уходящего года.</p>
                 </div>
-                <div class="presents__fireplace presents__box">
-                    <img class="img" src="images/main-page/fireplace.png" alt="Fireplace">
-
+            </div>
+            <div class="mobile-block">
+                <img class="img" src="icons/mail-color.png" alt="Mail">
+                <div class="mobile-block-desc">
+                    <h3 class="mobile-title">Посткроссинг: спешл фор ю</h3>
+                    <p>Создаем открытки для самых близких.</p>
                 </div>
-                <div class="presents__message present__fireplace-msg">
-                    <h2>
-                        #andersengift
-                    </h2>
-                    <p>
-                        Новогодний челлендж-адвент с розыгрышем крутого подарка.
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
-                </div>
-                <div class="presents__table presents__box">
-                    <img class="img" src="images/main-page/festive-table.png" alt="Festive Table">
-
-                </div>
-                <div class="presents__message presents__table-msg">
-                    <h2>
-                        Ями пейдж: вкуси праздник
-                    </h2>
-                    <p>
-                        Делимся рецептами к праздничному столу в лучших традициях.
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
-                </div>
-                <div class="presents__tv presents__box">
-                    <img class="img" src="images/main-page/TV-color.png" alt="TV">
-
-                </div>
-                <div class="presents__message presents__tv-msg">
-                    <h2>
-                        Mood: Праздник к нам приходит
-                    </h2>
-                    <p>
-                        Делимся новогодним настроением с коллегами.
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
-                </div>
-                <div class="presents__mail presents__box">
-                    <img class="img" src="images/main-page/mail-color.png" alt="Mail">
-
-                </div>
-                <div class="presents__message presents__mail-msg">
-                    <h2>
-                        Посткроссинг: спешл фор ю
-                    </h2>
-                    <p>
-                        Создаем открытки для самых близких.
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
-                </div>
-                <div class="presents__photo presents__box">
-                    <img class="img" src="images/main-page/painting-color.png" alt="Santa">
-
-                </div>
-                <div class="presents__message presents__photo-msg ">
-                    <h2>
-                        Празднуем здесь
-                    </h2>
-                    <p>
-                        Будь на связи! Подключайся к трансляции.
-                    </p>
-                    <div class="presents__decoration presents__decoration-bottom">
-                        <img src="icons/main-page/modal-left-bottom.svg" alt="">
-                    </div>
-                    <div class="presents__decoration presents__decoration-top">
-                        <img src="icons/main-page/modal-right-top.svg" alt="">
-                    </div>
-                </div>
-            </section>
-        </main>
+            </div>
+        </div>
     </div>
-    <div class="design">
-        <img src="icons/design-right.svg" alt="Design">
-        <img src="icons/design-right.svg" alt="Design">
+    <div class="wrapper">
+        <div class="design design-left">
+            <img src="icons/design-right.svg" alt="Design">
+            <img src="icons/design-right.svg" alt="Design">
+        </div>
+        <div class="content">
+            <header class="header">
+                <div class="header__menu">
+                    Комнаты
+                    <button>
+                        <img src="icons/rooms.svg" alt="Rooms">
+                    </button>
+                    <div class="header__menu-modal">
+                        <ul class="header__modal-list">
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">Mood: Праздник к нам приходит</a>
+                            </li>
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">#andersengift</a>
+                            </li>
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">Ями пейдж: вкуси праздник</a>
+                            </li>
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">Гордости пейдж</a>
+                            </li>
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">Посткроссинг: спешл фор ю</a>
+                            </li>
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">Объединяйся</a>
+                            </li>
+                            <li class="header__modal-item">
+                                <a href="#" class="header__modal-link">Празднуем здесь</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main class="body">
+                <section class="body__new-year">
+                    <img src="icons/new-season.svg" alt="New Season">
+                </section>
+                <section class="body__timer-box timer">
+                    <h1 class="timer__celebration">
+                        До начала праздника осталось:
+                    </h1>
+                    <div class="timer__container">
+                        <div class="timer__box">
+                            <div class="timer__inner">
+                                дни
+                                <span>
+                                    14
+                                </span>
+                            </div>
+                        </div>
+                        <div class="timer__box">
+                            <div class="timer__inner">
+                                часы
+                                <span>
+                                    05
+                                </span>
+                            </div>
+                        </div>
+                        <div class="timer__box">
+                            <div class="timer__inner">
+                                минуты
+                                <span>
+                                    35
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="body__presents presents">
+                    <div class="presents__carpet">
+                        <img src="icons/carpet.png" alt="Carpet">
+                    </div>
+                    <div class="presents__coffee-table presents__box">
+                        <img src="icons/chair%20coffee%20table%20color.png" alt="Coffee table">
+
+                    </div>
+                    <div class="presents__message presents__coffee">
+                        <h2>
+                            Гордости пейдж
+                        </h2>
+                        <p>
+                            Подводим итоги уходящего года
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="presents__chair presents__box">
+                        <img src="icons/chair%20color.png" alt="Chair">
+                    </div>
+                    <div class="presents__xmas presents__box">
+                        <img class="img" src="icons/Christmas-tree-color.png" alt="Christmas tree">
+
+                    </div>
+                    <div class="presents__message presents__xmas-msg">
+                        <h2>
+                            Объединяйся
+                        </h2>
+                        <p>
+                            Принимаем участие в стихотворном челлендже «Новогодняя гирлянда».
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="presents__fireplace presents__box">
+                        <img class="img" src="icons/fireplace.png" alt="Fireplace">
+
+                    </div>
+                    <div class="presents__message present__fireplace-msg">
+                        <h2>
+                            #andersengift
+                        </h2>
+                        <p>
+                            Новогодний челлендж-адвент с розыгрышем крутого подарка.
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="presents__table presents__box">
+                        <img class="img" src="icons/festive-table.png" alt="Festive Table">
+
+                    </div>
+                    <div class="presents__message presents__table-msg">
+                        <h2>
+                            Ями пейдж: вкуси праздник
+                        </h2>
+                        <p>
+                            Делимся рецептами к праздничному столу в лучших традициях.
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="presents__tv presents__box">
+                        <img class="img" src="icons/TV-color.png" alt="TV">
+
+                    </div>
+                    <div class="presents__message presents__tv-msg">
+                        <h2>
+                            Mood: Праздник к нам приходит
+                        </h2>
+                        <p>
+                            Делимся новогодним настроением с коллегами.
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="presents__mail presents__box">
+                        <img class="img" src="icons/mail-color.png" alt="Mail">
+
+                    </div>
+                    <div class="presents__message presents__mail-msg">
+                        <h2>
+                            Посткроссинг: спешл фор ю
+                        </h2>
+                        <p>
+                            Создаем открытки для самых близких.
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="presents__photo presents__box">
+                        <img class="img" src="icons/painting-color.png" alt="Santa">
+
+                    </div>
+                    <div class="presents__message presents__photo-msg ">
+                        <h2>
+                            Празднуем здесь
+                        </h2>
+                        <p>
+                            Будь на связи! Подключайся к трансляции.
+                        </p>
+                        <div class="presents__decoration presents__decoration-bottom">
+                            <img src="icons/modal-left-bottom.svg" alt="">
+                        </div>
+                        <div class="presents__decoration presents__decoration-top">
+                            <img src="icons/modal-right-top.svg" alt="">
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="design">
+            <img src="icons/design-right.svg" alt="Design">
+            <img src="icons/design-right.svg" alt="Design">
+        </div>
     </div>
-</div>
-<script>
-  const elementsList = document.querySelectorAll('.presents__message');
-  elementsList.forEach((element) => {
-    element.addEventListener('mouseenter', function (event) {
-      const prevElement = element.previousElementSibling;
-      prevElement.classList.add('hovered');
-    });
-    element.addEventListener('mouseleave', function (event) {
-      const prevElement = element.previousElementSibling;
-      prevElement.classList.remove('hovered');
-    });
-  })
-</script>
+    <script>
+        const elementsList = document.querySelectorAll('.presents__message');
+        elementsList.forEach((element) => {
+            element.addEventListener('mouseenter', function (event) {
+                const prevElement = element.previousElementSibling;
+                prevElement.classList.add('hovered');
+            });
+            element.addEventListener('mouseleave', function (event) {
+                const prevElement = element.previousElementSibling;
+                prevElement.classList.remove('hovered');
+            });
+        })
+    </script>
 </body>
+
 </html>
